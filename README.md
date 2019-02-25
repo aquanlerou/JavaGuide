@@ -1,20 +1,17 @@
-> 工作一年以上的小伙伴可以加这个交流群，群内有免费公开课,现在加入就送Java架构师进阶系列电子书籍：[![QQ群](https://img.shields.io/badge/QQ%E7%BE%A4-959442351-blue.svg)](https://jq.qq.com/?_wv=1027&k=5tjF8vk).
->
-> 阿里云双12正在做活动啦，两折，需要的不要错过！新人专属（老用户如果不想错过阿里云年底这波福利的话，可以用别人身份证再注册一个阿里云账号）,活动地址：[https://m.aliyun.com/act/team1212?spm=5176.8142029.1139928.2.90ee6d3e7cFdsl#/](https://m.aliyun.com/act/team1212?params=N.TD4MOG6m2w) 。1核1G云服务器1年CPU100%不限性能仅需277，3年仅需708,强烈推荐！
 
-为了优化大家的阅读体验，我重新进行了排版，并且增加了较为详细的目录供大家参考！如果有老哥对操作系统比较重要的知识总结过的话，欢迎找我哦！如果想学 SpringBoot 的话，推荐笔主的另外一个仓库[springboot-integration-examples](https://github.com/Snailclimb/springboot-integration-examples)。笔主最近在学的一门课程推荐：[程序员的数学课推荐](#程序员的数学课)。12.7日新增内容：[Dubbo 总结第一弹！](https://github.com/Snailclimb/Java-Guide/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%B8%8E%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1/dubbo.md),12-10号新增内容：[并发容器总结](https://github.com/Snailclimb/Java_Guide/blob/master/Java相关/Multithread/并发容器总结.md)
-
+为了优化大家的阅读体验，我重新进行了排版，并且增加了较为详细的目录供大家参考！如果有老哥对操作系统比较重要的知识总结过的话，欢迎找我哦！
+一些常用资源[公众号](#公众号)后台回复关键字“1”即可免费无套路获取。
 
 <div align="center">  
-
 <img src="http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-11-16/49833984.jpg" width=""/>
 </br>
 
-[![QQ群](https://img.shields.io/badge/QQ%E7%BE%A4-577511615-red.svg)](//shang.qq.com/wpa/qunwpa?idkey=f128b25264f43170c2721e0789b24b180fc482113b6f256928b6198ae07fe5d4)
+[![QQ群](https://img.shields.io/badge/QQ%E7%BE%A4-984466017-red.svg)](//shang.qq.com/wpa/qunwpa?idkey=10aee68bd241e739e59a8dfb0d4b33690bd3a4b5af0d09142cbdae2cb8c3966a)
+</br>
+微信交流群添加 [我的微信](#我的微信) 后回复关键字“加群”即可入群。
 
 </div>
 
-仓库新增了【备战春招/秋招系列】，希望可以为马上面临春招或者以后需要面试的小老哥助力！目前更新了美团常见面试题以及一些面试必备内容。
 
 
 ## 目录
@@ -23,15 +20,14 @@
   - [Java/J2EE 基础](#javaj2ee-基础)
   - [Java 集合框架](#java-集合框架)
   - [Java 多线程](#java-多线程)
-  - [Java IO 与 NIO](#java-io-与-nio)
+  - [Java BIO,NIO,AIO](#java-bionioaio)
   - [Java 虚拟机 jvm](#java-虚拟机-jvm)
 - [:open_file_folder: 数据结构与算法](#open_file_folder-数据结构与算法)
   - [数据结构](#数据结构)
   - [算法](#算法)
 - [:computer: 计算机网络与数据通信](#computer-计算机网络与数据通信)
   - [网络相关](#网络相关)
-  - [数据通信\(RESTful、RPC、消息队列\)](#数据通信restfulrpc消息队列)
-  - [Dubbo](#Dubbo)
+  - [数据通信\(RESTful,RPC,消息队列\)总结](#数据通信restfulrpc消息队列总结)
 - [:iphone: 操作系统](#iphone-操作系统)
   - [Linux相关](#linux相关)
 - [:pencil2: 主流框架/软件](#pencil2-主流框架软件)
@@ -41,19 +37,19 @@
   - [MySQL](#mysql)
   - [Redis](#redis)
 - [:punch: 架构](#punch-架构)
-  - [分布式相关](#分布式相关)
 - [:musical_note: 面试必备](#musical_note-面试必备)
   - [备战春招/秋招系列](#备战春招秋招系列)
   - [最最最常见的Java面试题总结](#最最最常见的java面试题总结)
+  - [Java学习/面试开源仓库推荐](#java学习面试开源仓库推荐)
 - [:art: 闲谈](#art-闲谈)
 - [:envelope: 说明](#envelope-说明)
-  - [项目介绍](#项目介绍)
-  - [关于转载](#关于转载)
-  - [如何对该开源文档进行贡献](#如何对该开源文档进行贡献)
-  - [为什么要做这个开源文档？](#为什么要做这个开源文档)
-  - [最后](#最后)
-  - [福利](#福利)
-  - [公众号](#公众号)
+
+## 待办
+
+- [ ] Java 8 新特性总结
+- [x] BIO,NIO,AIO 总结 
+- [ ] Netty 总结
+
   
 ## :coffee: Java
 
@@ -82,15 +78,17 @@
 * [BATJ都爱问的多线程面试题](https://github.com/Snailclimb/Java_Guide/blob/master/Java相关/Multithread/BATJ都爱问的多线程面试题.md)
 * [并发容器总结](https://github.com/Snailclimb/Java_Guide/blob/master/Java相关/Multithread/并发容器总结.md)
 
-### Java IO 与 NIO
-
-* [Java IO 与 NIO系列文章](https://github.com/Snailclimb/Java_Guide/blob/master/Java相关/Java%20IO与NIO.md)
-
 ### Java 虚拟机 jvm
 
 * [可能是把Java内存区域讲的最清楚的一篇文章](https://github.com/Snailclimb/Java_Guide/blob/master/Java相关/可能是把Java内存区域讲的最清楚的一篇文章.md)
 * [搞定JVM垃圾回收就是这么简单](https://github.com/Snailclimb/Java_Guide/blob/master/Java相关/搞定JVM垃圾回收就是这么简单.md)
-* [Java虚拟机（jvm）学习与面试](https://github.com/Snailclimb/Java_Guide/blob/master/Java相关/Java虚拟机（jvm）.md)
+* [《深入理解Java虚拟机》第2版学习笔记](https://github.com/Snailclimb/Java_Guide/blob/master/Java相关/Java虚拟机（jvm）.md)
+
+
+### Java BIO,NIO,AIO
+
+* [BIO,NIO,AIO 总结 ](https://github.com/Snailclimb/JavaGuide/blob/master/Java%E7%9B%B8%E5%85%B3/BIO%2CNIO%2CAIO%20summary.md)
+* [Java IO 与 NIO系列文章](https://github.com/Snailclimb/Java_Guide/blob/master/Java相关/Java%20IO与NIO.md)
 
 ### 设计模式
 
@@ -115,14 +113,14 @@
 
 * [计算机网络常见面试题](https://github.com/Snailclimb/Java_Guide/blob/master/计算机网络与数据通信/计算机网络.md)
 * [计算机网络基础知识总结](https://github.com/Snailclimb/Java_Guide/blob/master/计算机网络与数据通信/干货：计算机网络知识总结.md)
+* [HTTPS中的TLS](https://github.com/Snailclimb/Java_Guide/blob/master/计算机网络与数据通信/HTTPS中的TLS.md)
 
-### 数据通信(RESTful、RPC、消息队列)总结
+### 数据通信(RESTful,RPC,消息队列)总结
 
 * [数据通信(RESTful、RPC、消息队列)相关知识点总结](https://github.com/Snailclimb/Java-Guide/blob/master/计算机网络与数据通信/数据通信(RESTful、RPC、消息队列).md)
-
-### Dubbo
-
-* [Dubbo 总结](https://github.com/Snailclimb/Java-Guide/blob/master/计算机网络与数据通信/dubbo.md)
+* [Dubbo 总结：关于 Dubbo 的重要知识点](https://github.com/Snailclimb/Java-Guide/blob/master/计算机网络与数据通信/dubbo.md)
+* [消息队列总结：新手也能看懂，消息队列其实很简单](https://github.com/Snailclimb/Java-Guide/blob/master/计算机网络与数据通信/message-queue.md)
+* [一文搞懂 RabbitMQ 的重要概念以及安装](https://github.com/Snailclimb/Java-Guide/blob/master/计算机网络与数据通信/rabbitmq.md)
 
 ## :iphone: 操作系统
 
@@ -141,6 +139,7 @@
 ### ZooKeeper
 
 * [可能是把 ZooKeeper 概念讲的最清楚的一篇文章](https://github.com/Snailclimb/Java_Guide/blob/master/主流框架/ZooKeeper.md)
+* [ZooKeeper 数据模型和常见命令了解一下，速度收藏！](https://github.com/Snailclimb/Java_Guide/blob/master/主流框架/ZooKeeper数据模型和常见命令.md)
   
 ## :floppy_disk: 数据存储
 
@@ -157,9 +156,9 @@
 
 ## :punch: 架构
 
-### 分布式相关
-
 * [一文读懂分布式应该学什么](https://github.com/Snailclimb/Java_Guide/blob/master/架构/分布式.md)
+* [8 张图读懂大型网站技术架构](https://github.com/Snailclimb/JavaGuide/blob/master/架构/8%20张图读懂大型网站技术架构.md)
+* [【面试精选】关于大型网站系统架构你不得不懂的10个问题](https://github.com/Snailclimb/JavaGuide/blob/master/架构/【面试精选】关于大型网站系统架构你不得不懂的10个问题.md)
 
 ## :musical_note: 面试必备
 
@@ -182,12 +181,16 @@
 * [第三周（2018-08-22）](https://github.com/Snailclimb/Java-Guide/blob/master/Java相关/这几道Java集合框架面试题几乎必问.md) （Arraylist 与 LinkedList 异同、ArrayList 与 Vector 区别、HashMap的底层实现、HashMap 和 Hashtable 的区别、HashMap 的长度为什么是2的幂次方、HashSet 和 HashMap 区别、ConcurrentHashMap 和 Hashtable 的区别、ConcurrentHashMap线程安全的具体实现方式/底层具体实现、集合框架底层数据结构总结）
 * [第四周(2018-8-30).md](https://github.com/Snailclimb/Java-Guide/blob/master/面试必备/最最最常见的Java面试题总结/第四周(2018-8-30).md) （主要内容是几道面试常问的多线程基础题。）
 
+### Java学习/面试开源仓库推荐
+
+* [盘点一下Github上开源的Java面试/学习相关的仓库，看完弄懂薪资至少增加10k](https://github.com/Snailclimb/Java-Guide/blob/master/面试必备/JavaInterviewGithub.md)
     
 ## :art: 闲谈  
 
 * [选择技术方向都要考虑哪些因素](https://github.com/Snailclimb/Java-Guide/blob/master/其他/选择技术方向都要考虑哪些因素.md) 
 * [结束了我短暂的秋招，说点自己的感受](https://github.com/Snailclimb/JavaGuide/blob/master/%E5%85%B6%E4%BB%96/2018%20%E7%A7%8B%E6%8B%9B.md) 
- 
+* [这7个问题，可能大部分Java程序员都比较关心吧！](https://github.com/Snailclimb/JavaGuide/blob/master/%E9%9D%A2%E8%AF%95%E5%BF%85%E5%A4%87/java%20programmer%20need%20know.md)
+* [【2018总结】即使平凡，也要热爱自己的生活](https://github.com/Snailclimb/JavaGuide/blob/master/%E5%85%B6%E4%BB%96/2018%20summary.md)
 
 ***
 
@@ -217,6 +220,8 @@
 
 本人会利用业余时间一直更新下去，目前还有很多地方不完善，一些知识点我会原创总结，还有一些知识点如果说网上有比较好的文章了，我会把这些文章加入进去。您也可以关注我的微信公众号：“Java面试通关手册”，我会在这里分享一些自己的原创文章。 另外该文档格式参考：[Github Markdown格式](https://guides.github.com/features/mastering-markdown/)，表情素材来自：[EMOJI CHEAT SHEET](https://www.webpagefx.com/tools/emoji-cheat-sheet/)。如果大家需要与我交流，可以扫描下方二维码添加我的微信：
 
+### 我的微信
+
 ![我的微信](http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-11-17/16009393.jpg)
 
 ### 福利
@@ -228,9 +233,6 @@
 3. [最高￥1888云产品通用代金券](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=hf47liqn) 
 4. [阿里云建站服务](https://promotion.aliyun.com/ntms/act/jianzhanquan.html?userCode=hf47liqn)（企业官网、电商网站，多种可供选择模板，代金券免费领取）
 
-### 程序员的数学课
-
-![程序员的数学课](http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-12-4/56085913.jpg)
 
 ### 公众号
 
